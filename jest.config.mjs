@@ -10,6 +10,7 @@ const createJestConfig = nextJest({
 const config = {
   // Add more setup options before each test is run
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
+  setupFiles: ['<rootDir>/.jest/match-media-mock.ts'],
 
   testEnvironment: 'jest-environment-jsdom'
 }
