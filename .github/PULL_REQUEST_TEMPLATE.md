@@ -18,6 +18,7 @@ This PR [adds/removes/fixes/replaces] the [feature/bug/etc].
 - [ ] 🔁 CI related changes
 - [ ] 📦 Chore (Release)
 - [ ] ⏩ Revert
+- [ ] 📕 Repository config
 
 ## Mobile & Desktop Screenshots/Recordings
 <!-- Visual changes require screenshots -->
