@@ -16,17 +16,17 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 16.20.2
-          cache: 'yarn'
+          node-version: 18.x
+          cache: 'npm'
 
       - name: Install dependencies
-        run: yarn install
-
-      - name: Build project
-        run: yarn build
+        run: npm install
 
       - name: Linting
-        run: yarn lint
+        run: npm run lint
 
-      - name: Run Jest Tests
-        run: yarn test:ci
+      - name: Testing
+        run: npm run test
+
+      - name: Build
+        run: npm run build
