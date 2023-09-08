@@ -11,6 +11,13 @@ const config = {
   // Add more setup options before each test is run
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
   modulePaths: ['<rootDir>/src/', '<rootDir>/.jest/'],
+  collectCoverage: true,
+  collectCoverageFrom: [
+    'src/**/*.ts(x)?',
+    '!src/**/stories.tsx',
+    '!src/pages/**/*.tsx',
+    '!src/styles/**'
+  ],
 
   testEnvironment: 'jest-environment-jsdom'
 }
