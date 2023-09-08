@@ -1,5 +1,5 @@
 import Main from '@/components/Main'
 
-export const Home = () => <Main />
-
-export default Home
+export default function Home() {
+  return <Main />
+}
