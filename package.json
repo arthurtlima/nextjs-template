@@ -52,5 +52,9 @@
   },
   "main": "index.js",
   "author": "Arthur Lima <arthur.alves.lima@live.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0 <17.0.0",
+    "yarn": ">=1.0.0 <=2.0.0"
+  }
 }
