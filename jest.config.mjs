@@ -19,6 +19,9 @@ const config = {
     '!src/**/stories.tsx',
     '!src/styles/**'
   ],
+  transform: {
+    '^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }]
+  },
   testEnvironment: 'jest-environment-jsdom'
 }
 
