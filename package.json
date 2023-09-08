@@ -7,7 +7,7 @@
     "build": "next build",
     "test": "jest --passWithNoTests --maxWorkers=50%",
     "test:watch": "jest --watch --maxWorkers=25%",
-    "test:ci": "jest --runInBand",
+    "test:ci": "jest --runInBand --require @babel/register",
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
@@ -24,6 +24,8 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.22.17",
+    "@babel/register": "^7.22.15",
     "@storybook/addon-essentials": "^7.4.0",
     "@storybook/addon-interactions": "^7.4.0",
     "@storybook/addon-links": "^7.4.0",
