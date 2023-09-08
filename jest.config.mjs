@@ -10,10 +10,15 @@ const createJestConfig = nextJest({
 const config = {
   // Add more setup options before each test is run
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
+  moduleDirectories: ['node_modules', '<rootDir>/'],
   modulePaths: ['<rootDir>/src/', '<rootDir>/.jest/'],
   collectCoverage: true,
-
-
+  collectCoverageFrom: [
+    'src/**/*.ts(x)?',
+    '!src/pages/**', // should be tested in e2e
+    '!src/**/stories.tsx',
+    '!src/styles/**'
+  ],
   testEnvironment: 'jest-environment-jsdom'
 }
 
